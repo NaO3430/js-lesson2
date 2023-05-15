@@ -5,6 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="fizzbuzz.js"></script>
+    <style>
+      input[type='text'] {
+        width: 150px;
+        margin-left: 10px;
+      }
+      label {
+        display: inline-block;
+        width: 70px;
+      }
+      li {
+        list-style: none;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1>FizzBuzz問題</h1>
+
+    <div>
+      <label for="fizzNum">FizzNum:</label>
+      <input type="text" id="input-fizz" placeholder="整数値を入力して下さい" />
+    </div>
+    <div>
+      <label for="buzzNum">BuzzNum:</label>
+      <input type="text" id="input-buzz" placeholder="整数値を入力して下さい" />
+    </div>
+    <input type="button" value="実行" onclick="executionFizzBuzz()" />
+    <h2>【出力】</h2>
+    <ul id="list"></ul>
+  </body>
 </html>
